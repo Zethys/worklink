@@ -11,31 +11,36 @@
 
     <style>
         .navbar-logo-text { font-size: 24px; font-weight: bold; color: white; text-decoration: none; }
+        /* Исправление наложения текста */
+        .navigation-right-wrapper { display: flex; gap: 20px; align-items: center; }
     </style>
 </head>
 
 <body class="body-main-page">
     <nav class="navbar-wrapper">
-        <div class="navbar-container">
-            <a href="index.html" class="navbar-logo-text">WorkLink</a>
-            <div class="navigation-right-wrapper">
-                <a href="index.html" class="is-menu">Для исполнителей</a>
-                <a href="hire.html" class="is-menu">Для бизнеса</a>
-                <a href="about.html" class="is-menu">О нас</a>
+        <div class="padding-global">
+            <div class="navbar-container" style="display: flex; justify-content: space-between; align-items: center;">
+                <a href="index.html" class="navbar-logo-text">WorkLink</a>
+                <div class="navigation-right-wrapper">
+                    <a href="index.html" style="color: white; text-decoration: none;">Для исполнителей</a>
+                    <a href="hire.html" style="color: white; text-decoration: none;">Для бизнеса</a>
+                    <a href="about.html" style="color: white; text-decoration: none;">О нас</a>
+                    <a href="#leadform" class="button" style="background: white; color: black; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Найти исполнителей</a>
+                </div>
             </div>
         </div>
     </nav>
 
     <div class="page-wrapper">
-        <section class="section-hero">
-            <h1>WorkLink поможет найти работу или исполнителя</h1>
-            <p>Международный стартап родом из Центральной Азии.</p>
-            <img src="images/6917701df73918c29ad27b1_png.avif" alt="WorkLink App">
+        <section class="section-hero" style="padding: 100px 20px; text-align: left;">
+            <h1 style="font-size: 48px; color: white;">WorkLink поможет найти работу или исполнителя</h1>
+            <p style="font-size: 20px; color: white; opacity: 0.8;">Международный стартап родом из Центральной Азии.</p>
+            <img src="images/6917701df73918c29ad27b1_png.avif" alt="WorkLink App" style="max-width: 100%; margin-top: 40px;">
         </section>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/webfont.js"></script>
-    <script src="js/webflow.276ab304.74c30c9af5e4650d.js"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/webfont.js" type="text/javascript"></script>
+    <script src="js/webflow.276ab304.74c30c9af5e4650d.js" type="text/javascript"></script>
 </body>
 </html>
